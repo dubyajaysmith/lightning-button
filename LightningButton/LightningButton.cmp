@@ -1,0 +1,13 @@
+<aura:component implements="force:hasRecordId, force:lightningQuickActionWithoutHeader" access="global">
+    <aura:html tag="style">
+        .slds-backdrop {
+            background: rgba(43, 40, 38, 0) !important; 
+            display:none !important; 
+        }
+        .slds-fade-in-open {
+            display:none !important;
+       }
+    </aura:html>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:handler name="render" value="{!this}" action="{!c.onRender}"/>
+</aura:component>
